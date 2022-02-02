@@ -6,7 +6,7 @@ body {
 }
 
 .main {
-    margin: 0 50px 0 50px; 
+    margin: 0 50px; 
 }
 
 a {
@@ -35,19 +35,19 @@ header {
 
 nav ul {
     display: flex;
-    padding-top: 40px;
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 nav li {
-    margin-right: 60px;
+    padding: 37px 40px 0 40px;
 }
 
-nav li a:hover {
+nav li:hover {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 37px;
+    border-top: 3px solid #0065FC;
+    padding-top: 34px;
 }
 
 
@@ -121,13 +121,28 @@ nav li a:hover {
         align-items: center;
     }
 
+    .main {
+    
+    }
+
+    nav {
+        
+    }
+
+    nav ul {
+       
+    }
+
     nav li {
-        border-bottom:2px solid #F2F2F2;
+        border-bottom:3px solid #F2F2F2;
+        width: 100%;
+        padding-bottom: 10px;
     }
     
-    nav li a:hover {
-        border-bottom: 2px solid #0065FC;
+    nav li:hover {
+        border-bottom: 3px solid #0065FC;
         border-top: 0;
+        padding-top: 37px;
     }
 
     .section {
