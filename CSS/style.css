@@ -69,18 +69,21 @@ nav li:hover {
 
 .mapMarker {
     background-color: #F2F2F2;
-    width: 50px;
     border-radius: 15px 0 0 15px;
     display: flex;
+    justify-content: center;
 }
 
 .mapMarker i {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
 }
 
 .input {
     border: 1px solid #F2F2F2;
-    padding: 0 40px 0 20px;
+    padding: 0 40px 0 15px;
 
 }
 
@@ -103,23 +106,86 @@ nav li:hover {
     display: none;
 }
 
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px ;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.filters a {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.f-button {
+    display: flex;
+    border: 3px solid lightgrey;
+    border-radius: 25px / 25px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.picto-bg {
+    display: flex;
+    background-color: #DEEBFF;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: -3px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+.picto-bg i {
+    margin: auto;
+    color: #0065FC;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.info {
+    display: flex;
+    /* align-items: center; */
+    height: 25px;
+    margin-top: 20px;
+}
+
+.info-bg {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    margin-right: 10px;
+}
+
+.info-bg i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: #0065FC;
+    width: 22px;
+    height: 22px;
+}
+
+.info p {
+    margin-top: 4px;
+}
 
 /* Media queries */
 
 /* Tablet */
 
-@media only screen and (max_width: 992px) {
-
-}
-
-
-/* Mobile */
-
-@media only screen and (max-width: 768px) {
-    
+@media screen and (max-width: 992px) {
     
     .main {
-        margin: 0;
+    margin: 0;
     }
     
     .main section {
@@ -157,7 +223,7 @@ nav li:hover {
     }
     
     .input {
-        padding: 0 30px;
+        padding: 0 45px 0 15px;
     }
 
     .buttonDesktop {
@@ -172,10 +238,26 @@ nav li:hover {
         font-weight: bold;
         border: inherit;
         border-radius: 15px 15px 15px 15px;
+        margin-left: -20px;
     }
 
     .button i {
         display: flex;
         margin: auto;
     }
+    
+    .filters p {
+       width: 100%;
+    }
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+    .filters {
+        font-size: 15px;
+    }
+
 }
