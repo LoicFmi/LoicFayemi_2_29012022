@@ -16,7 +16,8 @@ a {
 
 h2 {
     margin: 0;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 
@@ -25,13 +26,13 @@ h2 {
 header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .logo {
     margin: 30px 0 0 15px;
-    height: 45px;
-    width: 95px;
+    height: 40px;
+    width: 90px;
 }
 
 nav ul {
@@ -42,12 +43,13 @@ nav ul {
 }
 
 nav li {
-    padding: 37px 40px 0 40px;
+    padding: 36px 40px 0 40px;
+    font-size: 14px;
 }
 
 nav li:hover {
     color: #0065FC;
-    border-top: 3px solid #0065FC;
+    border-top: 2px solid #0065FC;
     padding-top: 34px;
 }
 
@@ -60,11 +62,12 @@ nav li:hover {
 
 .search p {
     margin-top: 10px;
+    font-size: 13px;
 }
 
 .searchBar {
     display: flex;
-    height: 50px;
+    height: 45px;
 }
 
 .mapMarker {
@@ -78,28 +81,30 @@ nav li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
+    width: 45px;
+    font-size: 15px;
 }
 
 .input {
     border: 1px solid #F2F2F2;
-    padding: 0 40px 0 15px;
+    padding: 0 0 0 15px;
 
 }
 
 .input::placeholder {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     color: inherit;
 }
 
 .button {
     background-color: #0065FC;
     color: white;
+    font-size: 16px;
     font-weight: bold;
     border: inherit;
     border-radius: 0 15px 15px 0;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .button i {
@@ -112,12 +117,16 @@ nav li:hover {
 .filters {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 900px ;
-    margin-top: 30px;
+    max-width: 800px ;
+    margin-top: 25px;
     flex-wrap: wrap;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+.filters p {
+    font-size: 15px;
+    font-weight: 800;
 }
 
 .filters a {
@@ -131,15 +140,26 @@ nav li:hover {
     border-radius: 25px / 25px;
     align-items: center;
     margin-bottom: 10px;
+    transition: all .4s ease-out;
+    background: linear-gradient(to right, #0065FC 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    height: 35px;
+}
+
+.f-button:hover {
+    background-position: left;
+    color: white;
+    border-color: #0065FC;
 }
 
 .picto-bg {
     display: flex;
     background-color: #DEEBFF;
-    width: 45px;
-    height: 45px;
+    width: 41px;
+    height: 41px;
     border-radius: 50%;
-    margin-left: -3px;
+    margin-left: -4px;
     margin-top: -3px;
     margin-bottom: -3px;
 }
@@ -147,10 +167,6 @@ nav li:hover {
 .picto-bg i {
     margin: auto;
     color: #0065FC;
-}
-
-.capitalize {
-    text-transform: capitalize;
 }
 
 .info {
@@ -164,26 +180,28 @@ nav li:hover {
     border-radius: 50%;
     border: 1px solid lightgrey;
     margin-right: 10px;
+    height: 18px;
 }
 
 .info-bg i {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 11px;
+    font-size: 9px;
     color: #0065FC;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
 }
 
 .info p {
-    margin-top: 4px;
+    margin-top: 3px;
+    font-size: 13px;
 }
 
 
 /* Hébergements */
 
-.hosting {
+#hosting {
     display: flex;
     margin-top: 30px;
 }
@@ -191,58 +209,79 @@ nav li:hover {
 .city-hosting, .popular{
     background-color: #F2F2F2;
     border-radius: 20px 20px;
-    margin: 0 20px;
     padding: 30px 30px;
 }
 
 .city-hosting {
-    width: 70%;
+    margin-right: 40px;
 }
 
 .hosting-row1, .hosting-row2 {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 25px -15px;
 }
 
 .hosting-card, .aside-card {
     background-color: white;
     border-radius: 20px 20px;
+    box-shadow: 0 0 3px lightgrey;
 }
 
 .hosting-card {
-    height: 30%;
-    width: 30%;
+    height: 40%;
+    width: 190px;
     border: 4px solid white;
+    margin: 0 15px;
 }
 
 .hosting-card img {
+    height: 90px;
     width: 100%;
-    max-height: 120px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
 .hosting-content {
-    margin: 0 20px 0 20px;
+    margin: 5px 10px 5px 5px;
+}
+
+.hosting-content p, .rating {
+    margin: 0;
+    padding: 2px;
 }
 
 .hotel-name {
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.hotel-price {
+    font-size: 12px;
+}
+
+.rating {
+    color: #0065FC;
+    font-size: 9px;
+}
+
+.grey-star {
+    color: lightgrey;
+}
+
+.display-more {
+    margin-top: 40px;
+    font-weight: 800;
     font-size: 16px;
 }
 
 .popular {
-    width: 30%;
+    
 }
 
 .aside-header {
     display: flex;
     justify-content: space-between;
-}
-
-.aside-header h2 {
-
 }
 
 .aside-header i {
@@ -252,15 +291,29 @@ nav li:hover {
 .aside-card {
     display: flex;
     border: 4px solid white;
-    margin: 20px 0;
-    height: 20%;
+    margin: 28px 0;
+    height: 23%;
+    width: 280px;
 }
 
 .aside-card img {
-    width: 30%;
+    width: 35%;
     height: 100%;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
     object-fit: cover;
+}
+
+.aside-content {
+    margin: 10px 15px 0 15px;
+}
+
+.aside-content p, .rating {
+    margin: 0;
+    padding: 2px;
+}
+
+.aside-content p {
+    font-size: 13px;
 }
 
 
@@ -287,13 +340,10 @@ nav li:hover {
         width: 100%;
     }
 
-    nav ul {
-    }
-
     nav li {
-        border-bottom:3px solid #F2F2F2;
+        border-bottom: 2px solid #F2F2F2;
         width: 100%;
-        padding: 37px 0 10px 0;
+        padding: 36px 0 10px 0;
         display: flex;
         justify-content: center;
     }
@@ -320,7 +370,7 @@ nav li:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50px;
+        width: 45px;
         font-weight: bold;
         border: inherit;
         border-radius: 15px 15px 15px 15px;
