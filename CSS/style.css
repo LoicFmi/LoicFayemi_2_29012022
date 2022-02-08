@@ -105,6 +105,7 @@ nav li:hover {
     border: inherit;
     border-radius: 0 15px 15px 0;
     padding: 0 15px;
+    cursor: pointer;
 }
 
 .button i {
@@ -116,8 +117,8 @@ nav li:hover {
 
 .filters {
     display: flex;
-    justify-content: space-between;
-    max-width: 800px ;
+    /* justify-content: space-between; */
+    /* max-width: 800px ; */
     margin-top: 25px;
     flex-wrap: wrap;
     font-weight: 700;
@@ -140,6 +141,7 @@ nav li:hover {
     border-radius: 25px / 25px;
     align-items: center;
     margin-bottom: 10px;
+    margin-left: 20px;
     transition: all .4s ease-out;
     background: linear-gradient(to right, #0065FC 50%, white 50%);
     background-size: 200% 100%;
@@ -209,17 +211,20 @@ nav li:hover {
 .city-hosting, .popular{
     background-color: #F2F2F2;
     border-radius: 20px 20px;
-    padding: 30px 30px;
+    padding: 30px 30px 0 30px;
 }
 
 .city-hosting {
     margin-right: 40px;
+    width: 66%;
 }
 
 .hosting-row1, .hosting-row2 {
     display: flex;
     justify-content: space-between;
-    margin: 25px -15px;
+    margin: 0 -15px;
+    margin-top: 28px;
+    height: 25%;
 }
 
 .hosting-card, .aside-card {
@@ -229,14 +234,15 @@ nav li:hover {
 }
 
 .hosting-card {
-    height: 40%;
-    width: 190px;
+    width: 30%;
     border: 4px solid white;
     margin: 0 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hosting-card img {
-    height: 90px;
+    height: 60%;
     width: 100%;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
@@ -247,7 +253,7 @@ nav li:hover {
 }
 
 .hosting-content p, .rating {
-    margin: 0;
+    margin: auto;
     padding: 2px;
 }
 
@@ -270,13 +276,14 @@ nav li:hover {
 }
 
 .display-more {
-    margin-top: 40px;
+    margin-top: 30px;
     font-weight: 800;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .popular {
-    
+    width: 34%;
 }
 
 .aside-header {
@@ -291,9 +298,8 @@ nav li:hover {
 .aside-card {
     display: flex;
     border: 4px solid white;
-    margin: 28px 0;
+    margin-top: 28px;
     height: 23%;
-    width: 280px;
 }
 
 .aside-card img {
@@ -312,8 +318,9 @@ nav li:hover {
     padding: 2px;
 }
 
-.aside-content p {
-    font-size: 13px;
+.aside-content .rating {
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 
@@ -349,9 +356,9 @@ nav li:hover {
     }
     
     nav li:hover {
-        border-bottom: 3px solid #0065FC;
+        border-bottom: 2px solid #0065FC;
         border-top: 0;
-        padding-top: 37px;
+        padding-top: 36px;
     }
 
     .section {
@@ -375,6 +382,7 @@ nav li:hover {
         border: inherit;
         border-radius: 15px 15px 15px 15px;
         margin-left: -20px;
+        cursor: pointer;
     }
 
     .button i {
