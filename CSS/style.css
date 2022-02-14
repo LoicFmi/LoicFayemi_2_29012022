@@ -350,13 +350,13 @@ nav li:hover {
 }
 
 .city-activities {
-    background-color: green;
     display: flex;
+    height: 450px;
     max-height: 550px;
 }
 
 .city-activities a {
-    background-color: red;
+    background-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 30px lightgrey;
 }
@@ -368,19 +368,18 @@ nav li:hover {
 .city-activities p {
     font-weight: 700;
     font-size: 17px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .card-100, .duo-cards-left, .duo-cards-right {
-    height: auto;
+    /* height: auto; */
+    max-height: 450px;
     width: 25%;
-    /* max-height: 600px; */
     display: flex;
     flex-direction: column;
 }
 
 .city-activities img {
-    height: 90%;
     width: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -389,29 +388,56 @@ nav li:hover {
 .duo-cards-left {
     margin-right: 50px;
 }
+
 .card-100 {
     margin-right: 50px;
 }
 
-.card-70 {
-    height: 70%;
-}
-
-.card-70 img {
-}
-
-.card-30 {
-    height: 30%;
-    margin-top: 50px;
-}
-
-.card-40 {
-    height: 40%;
+.card-100 img {
+    /* height: 90%; */
+    height: 400px;
 }
 
 .card-60 {
-    height: 60%;
+    /* height: 60%; */
+    height: 265px;
+    margin-bottom: 50px;
+}
+
+.card-60 img {
+    height: 160px;
+    /* height: 90%; */
+}
+
+.card-40 {
+    /* height: 40%; */
+    height: 180px;
+}
+
+.card-40 img {
+    height: 125px;
+    /* height: 90%; */
+}
+
+.card-45 {
+    /* height: 45%; */
+    height: 190px;
+}
+
+.card-45 img {
+    height: 130px;
+    /* height: 90%; */
+}
+
+.card-55 {
+    /* height: 55%; */
+    height: 210px;
     margin-top: 50px;
+}
+
+.card-55 img {
+    height: 155px;
+    /* height: 90%; */
 }
 
 
