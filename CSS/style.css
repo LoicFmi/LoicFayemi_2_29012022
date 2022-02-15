@@ -274,6 +274,10 @@ nav li:hover {
     font-size: 15px;
 }
 
+.hotel-price span {
+    font-weight: 700;
+}
+
 .rating {
     color: #0065FC;
     font-size: 13px;
