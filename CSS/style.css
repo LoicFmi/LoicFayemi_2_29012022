@@ -242,7 +242,7 @@ nav li:hover {
 
 .hosting-card {
     width: 28%;
-    /* width: 260px; */
+    min-width: 210px;
     height: 100%;
     margin: 0 15px;
     display: flex;
@@ -267,7 +267,7 @@ nav li:hover {
 
 .hotel-name {
     font-weight: 800;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .hotel-price {
@@ -311,6 +311,7 @@ nav li:hover {
 
 .aside-card {
     width: 100%;
+    min-width: 240px;
     display: flex;
     margin-top: 35px;
     height: 25%;
@@ -372,13 +373,14 @@ nav li:hover {
 .city-activities p {
     font-weight: 700;
     font-size: 17px;
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .card-100, .duo-cards-left, .duo-cards-right {
-    /* height: auto; */
     max-height: 450px;
     width: 25%;
+    min-width: 240px;
     display: flex;
     flex-direction: column;
 }
@@ -597,4 +599,70 @@ nav li:hover {
         width: 100%;
     }
 
+
+    /* Activités */
+
+    .city-activities {
+        flex-direction: column;
+    }
+
+    .card-100, .duo-cards-left, .duo-cards-right {
+        /* max-height: 450px; */
+        width: 100%;
+        /* min-width: 240px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    .card-100 {
+        height: 200px;
+        margin: 0;
+    }
+    
+    .card-100 img {
+        height: 70%;
+        /* height: 400px; */
+    }
+    
+    .card-60 {
+        /* height: 60%; */
+        height: 200px;
+        margin: 0;
+    }
+    
+    .card-60 img {
+        /* height: 160px; */
+        height: 70%;
+    }
+    
+    .card-40 {
+        /* height: 40%; */
+        height: 200px;
+    }
+    
+    .card-40 img {
+        /* height: 125px; */
+        height: 70%;
+    }
+    
+    .card-45 {
+        /* height: 45%; */
+        height: 200px;
+    }
+    
+    .card-45 img {
+        /* height: 130px; */
+        height: 70%;
+    }
+    
+    .card-55 {
+        /* height: 55%; */
+        height: 200px;
+        margin: 0;
+    }
+    
+    .card-55 img {
+        /* height: 155px; */
+        height: 70%;
+    }
 }
