@@ -211,7 +211,7 @@ nav li:hover {
 .city-hosting, .popular{
     background-color: #F2F2F2;
     border-radius: 20px 20px;
-    padding: 45px 40px;
+    padding: 45px 20px;
     height: auto;
     max-height: 600px;
 }
@@ -310,7 +310,7 @@ nav li:hover {
 }
 
 .aside-card {
-    width: 100%;
+    width: 97%;
     min-width: 240px;
     display: flex;
     margin-top: 35px;
@@ -325,7 +325,7 @@ nav li:hover {
 }
 
 .aside-content {
-    margin: 0px 15px 0px 20px;
+    margin: 0 15px 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -445,8 +445,6 @@ nav li:hover {
     height: 155px;
     /* height: 90%; */
 }
-
-
 
 
 
@@ -570,6 +568,16 @@ nav li:hover {
         height: 200px;
     }
 
+    .display-more {
+        margin-top: 30px;
+    }
+
+    /* Activités */
+
+    #activities {
+        margin-top: 30px;
+    }
+
 }
 
 
@@ -577,10 +585,6 @@ nav li:hover {
 
 @media screen and (max-width: 768px) {
 
-
-    /* Filtres */
-
-    
 
     /* Hébergements */
 
@@ -593,6 +597,7 @@ nav li:hover {
         align-items: center;
         margin: 0;
         padding: 0;
+        height: auto;
     }
 
     .hosting-card {
@@ -602,21 +607,27 @@ nav li:hover {
 
     /* Activités */
 
+    #activities {
+        margin-top: 920px;
+
+    }
+
     .city-activities {
         flex-direction: column;
     }
 
     .card-100, .duo-cards-left, .duo-cards-right {
-        /* max-height: 450px; */
         width: 100%;
-        /* min-width: 240px; */
-        /* display: flex; */
-        /* flex-direction: column; */
+        margin: 0 0 20px 0;
+    }
+
+    .card-100, .card-60, .card-40 .card-45 {
+        margin: 0 0 20px 0;
     }
 
     .card-100 {
         height: 200px;
-        margin: 0;
+        /* margin: 0; */
     }
     
     .card-100 img {
@@ -627,7 +638,7 @@ nav li:hover {
     .card-60 {
         /* height: 60%; */
         height: 200px;
-        margin: 0;
+        /* margin: 0; */
     }
     
     .card-60 img {
@@ -658,11 +669,13 @@ nav li:hover {
     .card-55 {
         /* height: 55%; */
         height: 200px;
-        margin: 0;
+        margin-top: 20px;
     }
     
     .card-55 img {
         /* height: 155px; */
         height: 70%;
     }
+
+
 }
