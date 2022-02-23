@@ -560,7 +560,7 @@ footer li {
     .popular, .city-hosting {
         width: 100%;
         margin: 0;
-        padding: 45px 35px;
+        border-radius: 0 0;
     }
 
     .city-hosting {
