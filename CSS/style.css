@@ -69,19 +69,19 @@ nav li:hover {
     font-size: 17px;
 }
 
-.searchBar {
+.search-bar {
     display: flex;
     height: 55px;
 }
 
-.mapMarker {
+.map-marker {
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
     display: flex;
     justify-content: center;
 }
 
-.mapMarker i {
+.map-marker i {
     display: flex;
     justify-content: center;
     align-items: center;
