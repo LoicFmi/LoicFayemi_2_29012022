@@ -293,6 +293,7 @@ nav li:hover {
 }
 
 .display-more {
+    width: fit-content;
     margin-top: 40px;
     font-weight: 800;
     font-size: 19px;
@@ -463,6 +464,7 @@ footer li {
     padding: 7px 0;
 }
 
+
 /* Media queries */
 
 /* Tablet */
@@ -470,7 +472,7 @@ footer li {
 @media screen and (max-width: 992px) {
     
     .main {
-    margin: 0;
+        margin: 0;
     }
     
     .main section {
@@ -626,7 +628,6 @@ footer li {
 
     #activities {
         margin-top: 920px;
-
     }
 
     .city-activities {
